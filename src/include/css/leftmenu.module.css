@@ -1,0 +1,23 @@
+.leftmenu {
+    margin-top: 30px;
+    width: 300px;
+
+}
+.leftmenu ul li {
+    list-style-type: none;
+    padding:20px;
+
+}
+
+.item {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.item.active {
+    color: blueviolet;
+}
+
+.item:hover {
+    text-decoration: none;
+}
