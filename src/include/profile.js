@@ -23,7 +23,8 @@ function Profile() {
             </div>
             <Post />
 
-           <Posts />
+           <Posts message="Hi"/>
+           <Posts message="My name is Vlad"/>
         </div>
 
 
