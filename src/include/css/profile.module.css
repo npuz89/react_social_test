@@ -27,22 +27,5 @@
 }
 
 
-.messages {
-    display: flex;
-    margin: 30px 0;
-}
 
-.send {
-    background-color: aquamarine;
-    border: 0;
-    padding: 10px 20px;
-    text-transform: uppercase;
-}
 
-.avauser {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    background-color: darkorange;
-    margin-right: 20px;
-}

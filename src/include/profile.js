@@ -1,4 +1,6 @@
 import s from "./css/profile.module.css"
+import Posts from "./posts";
+import Post from "./post";
 
 function Profile() {
     return (
@@ -19,21 +21,9 @@ function Profile() {
                     <p>Number: +998 90 999 0990</p>
                 </div>
             </div>
-            <div>
-                <h3>My posts</h3>
-                <textarea rows="5" cols="60" name="text" placeholder="Ваш текст"></textarea>
-                <br/>
-                <input type="submit" value="Отправить" className={s.send} />
-            </div>
+            <Post />
 
-            <div className={s.messages}>
-                <div className={s.avauser}></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, vitae?</p>
-            </div>
-            <div className={s.messages}>
-                <div className={s.avauser}></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, vitae?</p>
-            </div>
+           <Posts />
         </div>
 
 

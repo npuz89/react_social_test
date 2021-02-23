@@ -1,0 +1,13 @@
+.avauser {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: darkorange;
+    margin-right: 20px;
+}
+
+
+.messages {
+    display: flex;
+    margin: 30px 0;
+}
