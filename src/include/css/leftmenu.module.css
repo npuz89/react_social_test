@@ -9,13 +9,13 @@
 
 }
 
-.item {
+li.item {
     color: forestgreen;
     font-weight: bold;
 }
 
-.item.active {
-    color: blueviolet;
+.item a.active {
+    color: darkgreen;
 }
 
 .item:hover {
