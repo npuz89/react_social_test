@@ -1,13 +1,15 @@
 import s from "./css/leftmenu.module.css"
+import {Link} from "react-router-dom";
 
 function Leftmenu() {
     return (
         <div className={s.leftmenu}>
             <ul>
-                <li><a href="#" className={`${s.item} ${s.active}`}>web</a></li>
-                <li><a href="#" className={s.item}>html</a></li>
-                <li><a href="#" className={s.item}>css</a></li>
-                <li><a href="#" className={s.item}>js</a></li>
+                <li><Link to="/profile" className={`${s.item} ${s.active}`}>Profile</Link></li>
+                <li><Link to="/dialogs" className={s.item}>Dialogs</Link></li>
+                <li><Link to="/music" className={s.item}>Music</Link></li>
+                <li><Link to="/news" className={s.item}>News</Link></li>
+                <li><a href="#" className={s.item}>Settings</a></li>
 
             </ul>
         </div>
