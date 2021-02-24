@@ -5,7 +5,7 @@ import Post from "./post";
 function Profile() {
     return (
 
-        <div className={s.content}>
+        <div>
             <div className={s.fon}>
                 <img src="https://i.pinimg.com/originals/74/14/81/741481e345d6805a4c55aa31a6123f15.jpg" alt=""/>
             </div>
@@ -23,8 +23,8 @@ function Profile() {
             </div>
             <Post />
 
-           <Posts message="Hi"/>
-           <Posts message="My name is Vlad"/>
+           <Posts message="Hi" like="20"/>
+           <Posts message="My name is Vlad" like="30"/>
         </div>
 
 

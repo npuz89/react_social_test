@@ -6,7 +6,9 @@ function Posts(props) {
 
             <div className={s.messages}>
                 <div className={s.avauser}></div>
-                <p>{props.message}</p>
+                <p>{props.message}<span> Like: {props.like}</span> </p>
+
+
             </div>
 
 
