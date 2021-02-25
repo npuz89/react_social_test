@@ -1,0 +1,17 @@
+.dialogs {
+    display: flex;
+}
+
+.dialog {
+    margin-right: 30px;
+}
+
+.userName {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.userName .active {
+    color: green;
+    font-weight: bold;
+}

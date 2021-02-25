@@ -1,6 +1,6 @@
 import s from "./css/profile.module.css"
-import Posts from "./posts";
-import Post from "./post";
+import Posts from "./Posts";
+import Post from "./Post";
 
 function Profile() {
     return (
