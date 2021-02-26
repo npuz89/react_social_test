@@ -14,6 +14,8 @@ class Coctails extends Component {
 
     componentDidMount() {
         fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink")
+
+        // fetch("http://10.32.3.8:8000/api/customers/")
             .then(res => res.json())
             .then(
                 (result) => {

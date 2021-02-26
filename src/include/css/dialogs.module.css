@@ -4,6 +4,8 @@
 
 .dialog {
     margin-right: 30px;
+    border-right: 2px solid #cccccc;
+    padding-right: 20px;
 }
 
 .userName {

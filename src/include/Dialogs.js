@@ -1,28 +1,42 @@
 import "./css/dialogs.module.css"
 import s from "./css/dialogs.module.css"
+
 import {NavLink} from "react-router-dom";
+import DialogsUser from "./DialogsUser";
+import Dialogmessage from "./Dialogmessage";
+import Posts from "./Posts";
+
+
+let DialogUser = [
+    {id: 1, username: "Vlad", text: "My name is Vlad"},
+    {id: 2, username: "Den", text: "My name is Vlad"},
+    {id: 3, username: "Ilder", text: "My name is Vlad"}
+];
+let DialogUserMessage = [
+    {id: 1, text: "My name is Vlad"},
+    {id: 2, text: "How are you?"},
+    {id: 3, text: "Ну и хули?)"},
+    {id: 4, text: "ахаха)"}
+];
+
+
+
+
+let DialUser = DialogUser.map(du => (<div className={s.userName + ' ' + s.active}><DialogsUser username={du.username} id={du.id} /></div>))
+let DialUserMess = DialogUserMessage.map(dum => (<div className={s.userMessage}><Dialogmessage text={dum.text} /></div>))
 
 function Dialogs(){
     return(
         <div className={s.dialogs}>
             <div className={s.dialog}>
-                <div className={s.userName + ' ' + s.active}>
-                    <NavLink to="/dialogs/1">Vlad</NavLink>
-                </div>
-                <div className={s.userName}>
-                    <NavLink to="/dialogs/2">Den</NavLink>
-                </div>
-                <div className={s.userName}>
-                    <NavLink to="/dialogs/1">Ildar</NavLink>
-                </div>
+
+                    {DialUser}
+
             </div>
             <div className={s.message}>
-                <div className={s.userMessage}>
-                    Hello
-                </div>
-                <div className={s.userMessage}>
-                    My name is Vlad
-                </div>
+
+                {DialUserMess}
+
             </div>
 
         </div>
