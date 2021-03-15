@@ -3,18 +3,15 @@ import Posts from "./Posts";
 import Post from "./Post";
 import ProfileUserInfo from "./ProfileInfoUser";
 
-let DataPosts = [
-    {id: 1, text: "My name is Vlad", likes: 22},
-    {id: 2, text: "How are you?", likes: 45},
-    {id: 3, text: "Ну и хули?)", likes:67}
-];
-let Mess = DataPosts.map(d => (<Posts message={d.text} like={d.likes}/>))
-function Profile() {
+
+
+function Profile(props) {
+    let Mess = props.posts.posts.map(d => (<Posts message={d.text} like={d.likes} />))
     return (
 
         <div>
             <ProfileUserInfo />
-            <Post />
+            <Post addPost={props.addPost}/>
             {Mess}
 
            {/* */}

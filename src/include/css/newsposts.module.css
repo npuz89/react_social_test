@@ -1,0 +1,19 @@
+.news {
+    width: 200px;
+    border: 1px solid #aaa;
+}
+
+.news img {
+    width: 200px;
+}
+
+.dt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dt span {
+    font-size: 10px;
+    opacity: 0.5;
+}

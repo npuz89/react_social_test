@@ -11,34 +11,41 @@ import News from "./include/News";
 import Users from "./include/Users";
 import Coctails from "./include/Coctails";
 import s from "./include/css/profile.module.css";
-import {BrowserRouter, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
 
 
-function App() {
+
+function App(props) {
+
     return (
-        <BrowserRouter>
+
             <div>
                 <Header/>
                 <div className="lc">
-                    <Leftmenu/>
+
+                    <Leftmenu  fusers={props.state.LeftMenuUser} />
 
                     <div className="content">
 
-                        <Route path='/dialogs' component={Dialogs}/>
+                        {/*<Route path='' component={Dialogs}/>*/}
                         <Route path='/music' component={Music}/>
-                        <Route path='/news' component={News}/>
+                        <Route path='/news' render={() => <News posts={props.state.NewsPage} /> }/>
                         <Route path='/users' component={Users}/>
                         <Route path='/coctails' component={Coctails}/>
-                        <Route path='/profile' component={Profile}/>
+                        <Route path='/profile' render={() => <Profile
+                            posts={props.state.PostsPage}
+                            addPost={props.addPost}/> }/>
+                        <Route path='/dialogs' render={() => <Dialogs dialoguser={props.state.DialogsPage} /> }/>
                         {/*<Profile />*/}
                         {/*/!*<Dialogs />*!/*/}
                     </div>
                 </div>
+                <Footer/>
             </div>
 
-            <Footer/>
-        </BrowserRouter>
+
+
 
 
     );
